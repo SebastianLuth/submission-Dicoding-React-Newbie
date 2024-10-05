@@ -1,10 +1,10 @@
 import React from "react";
-import { getInitialData } from "./utils";
-import { showFormattedDate } from "./utils";
-import MyNoteInput from "./components/NoteInput";
-import ActiveNotes from "./components/ActiveNotes";
-import ArsipNotes from "./components/ArsipNotes";
-import Navbar from "./components/Navbar";
+import { getInitialData } from "../utils";
+import { showFormattedDate } from "../utils";
+import MyNoteInput from "./NoteInput";
+import ActiveNotes from "./ActiveNotes";
+import ArsipNotes from "./ArsipNotes";
+import Navbar from "./Navbar";
 
 class Main extends React.Component {
   constructor(props) {

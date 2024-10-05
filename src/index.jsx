@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 // import style
 import './styles/style.css';
-import Main from './Main';
+import Main from './components/Main';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
