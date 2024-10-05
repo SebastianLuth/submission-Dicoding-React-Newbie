@@ -2,8 +2,10 @@ import React from "react";
 
 class ActiveNotes extends React.Component {
   render() {
-    const { notes, showFormattedDate } = this.props;
-
+    const { notes, showFormattedDate, onDelete, onArsip } = this.props;
+    if (notes.length === 0) {
+      return <p>Tidak ada catatan yang aktif</p>;
+    }
     return (
       <div className="notes-list">
         {notes.map((note) => (
@@ -14,8 +16,14 @@ class ActiveNotes extends React.Component {
               <p className="note-item__body">{note.body}</p>
             </div>
             <div className="note-item__action">
-              <button className="note-item__delete-button">Delete</button>
-              <button className="note-item__archive-button">Arsipkan</button>
+              <button 
+              className="note-item__delete-button"
+              onClick={() => onDelete(note.id)}
+              >Delete</button>
+              <button 
+              className="note-item__archive-button"
+              onClick={() => onArsip(note.id)}
+              >Arsipkan</button>
             </div>
           </div>
         ))}
