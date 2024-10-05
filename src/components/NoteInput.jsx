@@ -14,8 +14,8 @@ class MyNoteInput extends React.Component {
   }
 
   handleTitleChange(event) {
-    const maxChars = 50;
-    const newTitle = event.target.value.slice(0, maxChars);
+    const maxLength = 50;
+    const newTitle = event.target.value.slice(0, maxLength);
     this.setState({ title: newTitle });
   }
 

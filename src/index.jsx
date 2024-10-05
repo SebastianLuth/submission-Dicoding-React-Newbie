@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client';
 
 // import style
 import './styles/style.css';
-import App from './App';
+import Main from './Main';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
-   <App/>
+   <Main/>
 );
